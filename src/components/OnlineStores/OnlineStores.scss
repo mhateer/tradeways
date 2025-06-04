@@ -1,0 +1,110 @@
+@keyframes dropDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stores {
+  text-align: center;
+  padding: 40px;
+  color: #A47764;
+}
+
+.heading {
+  text-align: center;
+  padding-top: 113px;
+
+  h1 {
+    font-size: 60px; 
+    color: #A47764;
+    margin-bottom: 10px;
+  }
+}
+.paragraph {
+  p {
+    font-size: 16px; 
+    color: #A47764;
+    margin-bottom: 70px;
+  }
+}
+.subHeading {
+  text-align: center;
+
+  h2 {
+    font-size: 28px; 
+    color: #A47764;
+    margin-bottom: 10px;
+  }
+}
+
+.store-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.store-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+  border-radius: 20px;
+  padding: 20px;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(-50px);
+  animation: dropDown 0.8s ease-out forwards;
+}
+
+/* Applying the correct sizes */
+.amazon, .walmart {
+  width: 260px;
+  height: 260px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.top, .bottom {
+  display: flex;
+  gap: 15px;
+}
+
+.target {
+  width: 150px;
+  height: 125px;
+}
+.etsy {
+  width: 295px;
+  height: 125px;
+}
+.tiktok {
+  width: 295px;
+  height: 125px;
+}
+.ebay {
+  width: 150px;
+  height: 125px;
+}
+
+.store-box img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Staggered animation delays */
+.store-box:nth-child(1) { animation-delay: 0.2s; }
+.store-box:nth-child(2) { animation-delay: 0.4s; }
+.store-box:nth-child(3) { animation-delay: 0.6s; }
+.store-box:nth-child(4) { animation-delay: 0.8s; }
+.store-box:nth-child(5) { animation-delay: 1s; }
+.store-box:nth-child(6) { animation-delay: 1.2s; }

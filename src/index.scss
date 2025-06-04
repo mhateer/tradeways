@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lugfa:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lugfa", sans-serif;
+  background-color: #181818;
+  color: #A47764;
+  max-width: 1500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1500px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Ensure footer stays at bottom */
+.App {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-top: 10px; // Space for header
+  padding-bottom: 10px; // Space for footer
+}
+
+/* Main content should take up available space */
+.main-content {
+  flex: 1;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  body {
+    padding: 0 10px;
+  }
+  .App {
+    padding-top: 10px; // Adjust for smaller header
+    padding-bottom: 20px; // Adjust for smaller footer
+  }
+}
