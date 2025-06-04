@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+// import axios from "axios";
 import "./ContactForm.scss";
 
 const ContactForm = () => {
@@ -50,7 +50,7 @@ const ContactForm = () => {
       setButtonText("Not Sent");
       setButtonClass("error"); // Red button
     }, 2000);
-    
+
     // try {
     //   await axios.post("http://localhost:5000/send-email", formData);
 
