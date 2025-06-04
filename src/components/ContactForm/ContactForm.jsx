@@ -46,22 +46,26 @@ const ContactForm = () => {
     setIsSubmitting(true);
     setButtonText("Sending...");
     setButtonClass(""); // Reset button color
+    setTimeout(() => {
+      setButtonText("Not Sent");
+      setButtonClass("error"); // Red button
+    }, 2000);
+    
+    // try {
+    //   await axios.post("http://localhost:5000/send-email", formData);
 
-    try {
-      await axios.post("http://localhost:5000/send-email", formData);
+    //   setTimeout(() => {
+    //     setButtonText("Sent");
+    //     setButtonClass("success"); // Green button
+    //     resetForm();
+    //   }, 2000);
 
-      setTimeout(() => {
-        setButtonText("Sent");
-        setButtonClass("success"); // Green button
-        resetForm();
-      }, 2000);
-
-    } catch (error) {
-      setTimeout(() => {
-        setButtonText("Not Sent");
-        setButtonClass("error"); // Red button
-      }, 2000);
-    }
+    // } catch (error) {
+    //   setTimeout(() => {
+    //     setButtonText("Not Sent");
+    //     setButtonClass("error"); // Red button
+    //   }, 2000);
+    // }
 
     setTimeout(() => {
       setIsSubmitting(false);
