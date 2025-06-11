@@ -80,7 +80,7 @@ const ContactForm = () => {
       </div>
 
       <div className="contact-container">
-        {/* Contact Form */}
+        {/* Contact Form  */}
         <form className={`contact-form ${isFormVisible ? "show" : ""}`} onSubmit={handleSubmit}>
           <div className="input-group">
             <div className="input-field">
@@ -115,17 +115,17 @@ const ContactForm = () => {
 
         {/* Contact Info */}
         <div className={`contact-info ${isInfoVisible ? "show" : ""}`}>
-          <p>Phone Number</p>
+          <p className="contact-label">Phone Number</p>
           <div className="phone">
             <p>737-235-6180</p>
           </div>
           <br />
-          <p>Email</p>
+          <p className="contact-label">Email</p>
           <div className="email">
             <p>contact@tradewaysco.com</p>
           </div>
           <br />
-          <p>Office Location</p>
+          <p className="contact-label">Office Location</p>
           <div className="office">
             <p>Tomball, Texas 77375</p>
           </div>

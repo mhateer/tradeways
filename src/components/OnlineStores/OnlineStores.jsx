@@ -30,7 +30,7 @@ const OnlineStores = () => {
       </div>
       <div className="paragraph">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ligula metus, elementum vel orci in, luctus finibus nisi. Sed <br />
+          Logrem ipsum dolor sit amet, consectetur adipiscing elit. Nam ligula metus, elementum vel orci in, luctus finibus nisi. Sed <br />
           malesuada lectus nunc. Curabitur ut quam at lacus suscipit bibendum pharetra get mauris. Nam placerat <br />
           vestibulum justo ut sagittis.
         </p>

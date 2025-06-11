@@ -1,3 +1,4 @@
+@import url('https://fonts.cdnfonts.com/css/lufga');
 @keyframes dropDown {
   from {
     opacity: 0;
@@ -11,127 +12,126 @@
 
 .contact {
   text-align: center;
-  padding: 40px;
-}
+  font-family: 'Lufga';
+  margin-bottom: 45px;
 
-.contactHeader {
-  text-align: center;
-  h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
+  .contactHeader {
+    text-align: center;
+    h2 {
+      font-size: 50px;
+      font-weight: 600;
+      margin-bottom: 25px;
+    }
   }
-}
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1040px;
+    margin: auto;
+  
 
-.contact-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 30px;
-  max-width: 800px;
-  margin: auto;
-}
+    /* Drop-down animation applied */
+    .contact-form,
+    .contact-info {
+      opacity: 0;
+      transform: translateY(-50px);
+      animation: dropDown 0.8s ease-out forwards;
+    }
 
-/* Drop-down animation applied */
-.contact-form,
-.contact-info {
-  opacity: 0;
-  transform: translateY(-50px);
-  animation: dropDown 0.8s ease-out forwards;
-}
+    .contact-form {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      animation-delay: 0.5s; /* Form drops first */
+    }
 
-.contact-form {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  animation-delay: 0.5s; /* Form drops first */
-}
+    /* Adjust spacing for input groups */
+    .input-group {
+      display: flex;
+      gap: 20px;
+    }
 
-/* Adjust spacing for input groups */
-.input-group {
-  display: flex;
-  gap: 10px;
-}
+    /* New styles for label positioning */
+    .input-field {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      
+      
+    }
 
-/* New styles for label positioning */
-.input-field {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
+    .input-field label {
+      font-size: 16px;
+      font-weight: 500;
+      text-align: left;
+    }
 
-.input-field label {
-  font-size: 14px;
-  margin-bottom: 5px;
-  margin-left: 5px;
-  text-align: left;
-}
+    input {
+      width: 340px;
+      height: 46px;
+      background: #fff;
+      border: 1px solid #000;
+      color: #fffef7; 
+      border-radius: 5px;
+    }
 
-input {
-  width: 100%;
-  padding: 10px;
-  background: #fff;
-  border: 1px solid #000;
-  color: black; 
-  border-radius: 5px;
-}
+    .message {
+      textarea {
+        width: 700px;
+        height: 92px;
+        border-radius: 5px;
+        border: 1px solid #000;
+      }
+    }
 
-.message {
-  textarea {
-    width: 100%;
-    height: 70px;
-    border-radius: 5px;
-    padding: 10px;
-    border: 1px solid #000;
+    /* Contact Info Box */
+    .contact-info {
+      text-align: left;
+      background: #000000;
+      width: 320px;
+      height: 268px ;
+      padding: 25px 50px 25px 50px;
+      margin-top: 21px;
+      border-radius: 20px;
+      animation-delay: 0.8s; /* Info drops after the form */
+    }
+    .contact-label{
+      font-size: 18px;
+    }
+
+    .phone, .email, .office {
+      color: #fff;
+      font-size: 16px;
+      padding-top: 5px;
+    }
+
+
+    button {
+      font-family: 'Lufga';
+      background-color: #936551;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 30px;
+      width: 180px;
+      height: 40px;
+      color: #fff;
+      margin-top: 5px;
+      margin-left: 10px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    /* Success (Green) */
+    button.success {
+      background-color: #4CAF50; /* Light Green */
+    }
+
+    /* Error (Red) */
+    button.error {
+      background-color: #FF6347; /* Light Red */
+    }
   }
-}
-
-button {
-  background-color: #936551;
-  border: none;
-  padding: 10px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 30px;
-  width: 150px;
-  color: #fff;
-  margin-left: 10px;
-}
-
-/* Contact Info Box */
-.contact-info {
-  text-align: left;
-  background: #000000;
-  margin-top: 25px;
-  padding: 30px;
-  border-radius: 20px;
-  animation-delay: 0.8s; /* Info drops after the form */
-}
-
-.phone, .email, .office {
-  color: #fff;
-  font-size: 14px;
-  padding-top: 5px;
-}
-button {
-  background-color: #936551;
-  border: none;
-  padding: 10px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 30px;
-  width: 150px;
-  color: #fff;
-  margin-left: 10px;
-  transition: all 0.3s ease-in-out;
-}
-
-/* Success (Green) */
-button.success {
-  background-color: #4CAF50; /* Light Green */
-}
-
-/* Error (Red) */
-button.error {
-  background-color: #FF6347; /* Light Red */
 }
