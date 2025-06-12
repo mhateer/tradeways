@@ -59,6 +59,14 @@
       width: 390px;
       height: 390px;
     }
+    .amazon-img{
+      width: 349px;
+      height: 105px;
+    }
+    .waltmart-img{
+      width: 350px;
+      height: 84px;
+    }
     .center {
       display: flex;
       flex-direction: column;
@@ -74,14 +82,26 @@
       width: 220px;
       height: 185px;
     }
+
+    .target-img{
+      width: 120px;
+      height: 185px;
+    }
+    .ebay-img{
+      width: 190px;
+      height: 77px;
+    }
     .etsy, .tiktok {
       width: 440px;
       height: 185px;
-      padding: 20px 25px;
     }
-    .store-box img {
-      max-width: 100%;
-      max-height: 100%;
+    .etsy-img{
+      width: 211px;
+      height: 100px;
+    }
+    .tiktok-img{
+      width: 344px;
+      height: 100px;
     }
   }
 
