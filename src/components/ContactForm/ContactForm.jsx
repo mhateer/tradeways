@@ -78,7 +78,23 @@ const ContactForm = () => {
       <div className="contactHeader">
         <h2>Let's Connect & Work Together</h2>
       </div>
-
+       {/* Contact Info  for mobile version*/}
+       <div className={`contact-info mobile-only ${isInfoVisible ? "show" : ""}`}>
+          <p className="contact-label">Phone Number</p>
+          <div className="phone">
+            <p>737-235-6180</p>
+          </div>
+          <br />
+          <p className="contact-label">Email</p>
+          <div className="email">
+            <p>contact@tradewaysco.com</p>
+          </div>
+          <br />
+          <p className="contact-label">Office Location</p>
+          <div className="office">
+            <p>Tomball, Texas 77375</p>
+          </div>
+        </div>
       <div className="contact-container">
         {/* Contact Form  */}
         <form className={`contact-form ${isFormVisible ? "show" : ""}`} onSubmit={handleSubmit}>
@@ -112,9 +128,8 @@ const ContactForm = () => {
             {buttonText}
           </button>
         </form>
-
-        {/* Contact Info */}
-        <div className={`contact-info ${isInfoVisible ? "show" : ""}`}>
+        {/* Contact Info for desktop version*/}
+       <div className={`contact-info desktop-only ${isInfoVisible ? "show" : ""}`}>
           <p className="contact-label">Phone Number</p>
           <div className="phone">
             <p>737-235-6180</p>
@@ -131,6 +146,7 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
+     
     </section>
   );
 };

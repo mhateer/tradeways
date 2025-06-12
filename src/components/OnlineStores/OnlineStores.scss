@@ -107,7 +107,108 @@
 
 }
 
-
+@media (max-width: 360px) {
+  .stores {
+    text-align: center;
+    font-family: 'Lufga';
+    color: #A47764;
+  
+    .heading {
+      text-align: center;
+    
+      h1 {
+        font-size: 34px; 
+        font-weight: 500;
+        
+      }
+    }
+    .paragraph {
+      p {
+        font-size: 18px;  
+        margin-bottom: 30px;
+        width: 340px;
+      }
+    }
+    .subHeading {
+      text-align: center;
+    
+      h2 {
+        font-size: 24px;  
+        margin-bottom: 10px;
+        font-weight: 400;
+      }
+    }
+  
+    .store-logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      width: 360px;
+      margin-bottom: 150px;
+      
+      .store-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #000000;
+        border-radius: 20px;
+        opacity: 0;
+        transform: translateY(-50px);
+        animation: dropDown 0.8s ease-out forwards;
+      }
+      .amazon, .walmart {
+        width: 340px;
+        height: 120px;
+      }
+      .amazon-img {
+        width: 232px;
+        height: 70px;
+      }
+      .waltmart-img{
+        width: 291px;
+        height: 70px;
+      }
+      .center {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      
+      .top, .bottom {
+        display: flex;
+        gap: 10px;
+      }
+      
+      .target, .ebay {
+        width: 130px;
+        height: 120px;
+      }
+  
+      .target-img{
+        width: 77px;
+        height: 120px;
+      }
+      .ebay-img{
+        width: 112px;
+        height: 50px;
+      }
+      .etsy, .tiktok {
+        width: 200px;
+        height: 120px;
+      }
+      .etsy-img{
+        width: 120px;
+        height: 65px;
+      }
+      .tiktok-img{
+        width: 190px;
+        height: 65px;
+      }
+    }
+  
+  }
+}
 
 /* Staggered animation delays */
 .store-box:nth-child(1) { animation-delay: 0.2s; }

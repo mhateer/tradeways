@@ -23,6 +23,9 @@
       margin-bottom: 25px;
     }
   }
+  .mobile-only {
+    display: none;
+  }
   .contact-container {
     display: flex;
     justify-content: center;
@@ -89,7 +92,9 @@
         box-sizing: border-box;
       }
     }
-
+    .desktop-only {
+      display: block;
+    }
     /* Contact Info Box */
     .contact-info {
       text-align: left;
@@ -137,4 +142,143 @@
       background-color: #FF6347; /* Light Red */
     }
   }
+}
+
+
+@media (max-width: 360px) {
+  .contact {
+    text-align: center;
+    font-family: 'Lufga';
+    margin-bottom: 10px;
+  
+    .contactHeader {
+      text-align: center;
+      h2 {
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+    }
+    .desktop-only {
+      display: none !important;
+    }
+    .mobile-only {
+      display: block !important;
+    }
+    /* Contact Info Box */
+    .contact-info {
+      text-align: left;
+      background: #000000;
+      width: 340px;
+      height: 250px ;
+      padding: 25px 50px 25px 50px;
+      margin-bottom: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+      border-radius: 20px;
+      animation-delay: 0.8s; /* Info drops after the form */
+    }
+    .contact-label{
+      font-size: 18px;
+    }
+
+    .phone, .email, .office {
+      color: #fff;
+      font-size: 16px;
+      padding-top: 5px;
+    }
+
+    .contact-container {
+      gap: 10px;
+      max-width: 340px;
+    
+  
+      /* Drop-down animation applied */
+      .contact-form,
+      .contact-info {
+        opacity: 0;
+        transform: translateY(-50px);
+        animation: dropDown 0.8s ease-out forwards;
+      }
+  
+      .contact-form {
+        flex-direction: column;
+        gap: 20px;
+        animation-delay: 0.5s; /* Form drops first */
+      }
+  
+      /* Adjust spacing for input groups */
+      .input-group {
+        flex-direction: column;
+        gap: 10px;
+      }
+  
+      /* New styles for label positioning */
+      .input-field {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+  
+      .input-field label {
+        font-size: 16px;
+        font-weight: 500;
+        text-align: left;
+      }
+  
+      input {
+        width: 340px;
+        height: 46px;
+        background: #fffef7;
+        border: 1px solid #000;
+        border-radius: 5px;
+        padding: 5px;
+      }
+  
+      .message {
+        width: 340px;
+        height: 200px;
+        textarea {
+          border-radius: 5px;
+          padding: 5px;
+          width: 340px;
+          height: 200px;
+          resize: none;
+          box-sizing: border-box;
+        }
+      }
+  
+      button {
+        font-family: 'Lufga';
+        background-color: #936551;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 30px;
+        width: 180px;
+        height: 40px;
+        color: #fff;
+        margin-top: 5px;
+        transition: all 0.3s ease-in-out;
+      
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+  
+      /* Success (Green) */
+      button.success {
+        background-color: #4CAF50; /* Light Green */
+      }
+  
+      /* Error (Red) */
+      button.error {
+        background-color: #FF6347; /* Light Red */
+      }
+
+    }
+  }
+  
 }
