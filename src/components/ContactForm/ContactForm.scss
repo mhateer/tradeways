@@ -77,11 +77,13 @@
     }
 
     .message {
+      width: 700px;
+      height: 92px;
       textarea {
-        width: 700px;
-        height: 92px;
         border-radius: 5px;
         padding: 5px;
+        width: 700px;
+        height: 92px;
         // border: 1px solid #000;
         resize: none;
         box-sizing: border-box;
