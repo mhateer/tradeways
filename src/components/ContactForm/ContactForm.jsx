@@ -85,27 +85,27 @@ const ContactForm = () => {
           <div className="input-group">
             <div className="input-field">
               <label>Full Name</label>
-              <input type="text" name="name" value={formData.name} onChange={handleChange} required />
+              <input type="text" name="name" value={formData.name} onChange={handleChange} required placeholder="Enter Your Full Name"/>
             </div>
             <div className="input-field">
               <label>Company's Name</label>
-              <input type="text" name="company" value={formData.company} onChange={handleChange} required />
+              <input type="text" name="company" value={formData.company} onChange={handleChange} required placeholder="Enter Your Company Name"/>
             </div>
           </div>
           <div className="input-group">
             <div className="input-field">
               <label>Email Address</label>
-              <input type="email" name="email" value={formData.email} onChange={handleChange} required />
+              <input type="email" name="email" value={formData.email} onChange={handleChange} required placeholder="name@example.com"/>
             </div>
             <div className="input-field">
               <label>Phone Number</label>
-              <input type="tel" name="phone" value={formData.phone} onChange={handleChange} required />
+              <input type="tel" name="phone" value={formData.phone} onChange={handleChange} required pattern="[0-9+()\- ]*" placeholder="+1 (555) 123-4567" />
             </div>
           </div>
           <div className="input-field">
             <label>Message</label>
             <div className="message">
-              <textarea name="message" value={formData.message} onChange={handleChange} required></textarea>
+              <textarea name="message" value={formData.message} onChange={handleChange} required placeholder="Enter your message in detail"></textarea>
             </div>
           </div>
           <button type="submit" disabled={isSubmitting} className={buttonClass}>
